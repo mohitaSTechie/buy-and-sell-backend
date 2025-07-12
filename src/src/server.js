@@ -7,9 +7,8 @@ const start = async () => {
         host: 'localhost',
     });
 
-    routes.forEach(route=> server.route(route))
+    routes.forEach(route => server.route(route));
 
- 
     await server.start();
     console.log(`Server is listening on ${server.info.uri}`);
 }
